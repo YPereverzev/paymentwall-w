@@ -1,0 +1,256 @@
+$mainbgcolor: #21252b;
+$main_dark_gray: #282c34;
+$main_gray: #949494;
+$main_title_gray: #7a8387;
+$main_light_gray: #ebf1f3;
+$text_blue: #4a88e5;
+$palevioletred: #fff;
+$tomato: tomato;
+
+.tomato {
+    color: tomato;
+}
+
+.hotpink {
+    color:hotpink;
+}
+
+.main_title_gray {
+    color: $main_title_gray;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    font-size: 13px;
+}
+
+.text_blue {
+    color: $text_blue;
+}
+
+.main-header {
+
+    &__wrapper {
+        background-color: $mainbgcolor;
+        height: 75px;
+        padding: 20px 40px 20px 40px ;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__sign-in-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        color: $main_gray;
+        padding-right: 25px;
+    }
+}
+
+
+
+.sign-up-btn {
+    color: $main_gray;
+    background-color: $mainbgcolor;
+    border-radius: 1px;
+    outline: none;
+    border: 1px solid $main_gray;
+    border-radius: 2px;
+    padding: 5px;
+    width: 90px;
+    height: 40px;
+}
+
+.main-header__logo {
+    height: 21px;
+    /* display: inline-block; */
+}
+
+.aside {
+    &__wrapper {
+        padding: 40px;
+        min-width: 275px;
+        border-right: 1px solid $main_light_gray ;
+    }
+
+    &__block-wrapper {
+        padding-bottom: 45px;
+        color: #474747;
+
+        &__header{
+            font-family: ProximaNova;
+            font-size: 12px;
+            color: $main_title_gray;
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+        }
+
+        &__menu-list {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: MyriadPro;
+            
+            &__inner-list {
+                &__item {
+                    margin-left: 25px;
+
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+.double {
+    color: red;
+}
+
+.languages {
+    max-width: 550px;
+    // font-family: onemore;
+    // font-family: ProximaNova;
+    &__api {
+        padding: 35px;
+        background-color: $mainbgcolor;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px;
+    
+        &__section {
+            & a {
+                font-weight: normal;
+            }
+
+            &__wrapper {
+                background-color: $main_dark_gray;
+                padding: 20px;
+            }
+        }
+    }
+
+    &__nav {
+        background-color: $main_dark_gray;
+        // color: red;
+    font-family: ProximaNova;
+        
+
+    }
+
+    &__nav__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        
+        // justify-content: space-around;
+        
+        &__item {
+            text-align: center;
+            color: #FFF;
+            font-size: 16px;
+            padding: 19px 0 15px 0;
+            
+            &-active {
+                color: #fec013;
+                border-bottom: 4px solid #fec013;
+            }
+        }
+    }
+}
+
+.languages__api__section a{
+    color: #3a72c7;
+}
+    
+
+.little-table {
+    // font-family: onemore;
+    font-family: MyriadPro ;
+    font-family: ProximaNova;
+
+}
+
+.content {
+    color: #474747;
+    padding: 30px;
+    min-width: 575px;
+
+
+    & h1 {
+        font-size: 52px;
+        letter-spacing: -0.25px;
+        line-height: 2em;
+        font-family: MyriadPro;
+        font-weight: 400;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 10px 0 0 0;
+        line-height: 2em;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 2em;
+    }
+
+    &__table{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight: bold;
+
+
+        &__head {
+            font-size: 13px;
+            font-weight: bold;
+            padding: 20px 10px 20px 10px;
+            border-bottom: 1px solid #c0c0c0;
+        }
+
+        &__text {
+            font-size: 13px;
+            line-height: 18px;
+            padding: 20px 10px 20px 10px;
+            border-bottom: 1px solid $main_light_gray;
+        }
+    }
+
+    &__result-table {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+
+        &__item {
+            font-size: 13px;
+            color: #474747;
+            padding: 20px 0 20px 0;
+            line-height: 2em;
+            font-weight: 700;
+
+            &:nth-child {
+                color: red;
+            }
+
+            &-gray {
+                color: $main_title_gray;
+            }
+        }
+    }
+}
+

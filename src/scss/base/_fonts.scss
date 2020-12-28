@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+
+@font-face {
+    font-family: "MyriadPro";
+    src : url("/src/scss/base/myriadpro.otf");
+}
+
+
+
+@font-face {
+    font-family: "ProximaNova";
+    src : url("/src/scss/base/proxima.ttf");
+}
+
+@font-face {
+    font-family: 'onemore';
+    src: url("/src/scss/base/onemore.otf");
+}
+    
